@@ -1,0 +1,90 @@
+.sprint
+  width 100%
+  margin-bottom 15px
+  background-color #FAF8F7
+  cursor default
+  border-radius 10px
+  overflow hidden
+
+  &__header
+    padding 6px 0
+    border-bottom 1px solid #A19E9C
+    line-height 36px
+    color #A19E9C
+
+  &__title
+    font-size 18px
+    margin-left 30px
+    font-weight 700
+
+.ticket
+  color #A19E9C
+
+  &__link
+    color inherit
+    font-size 14px
+    line-height 48px
+    padding 0 20px
+    display flex
+    justify-content space-between
+    align-items center
+    text-decoration none
+
+    >div
+      white-space nowrap
+
+  &__number
+    // margin-left 20px
+
+  &__title
+    margin-left 20px
+    flex-grow 1
+    text-overflow ellipsis
+    overflow hidden
+    text-overflow ellipsis
+
+  &__status
+    margin-left 20px
+    line-height 30px
+    border-radius 20px
+    text-align center
+
+    &--todo
+      color #E25141
+      background-color #F4CDC8
+      padding 0 15px
+
+      &:before
+        content "To Do"
+
+    &--in-progress
+      color #C1AA57
+      background-color #E8DEBE
+      padding 0 15px
+
+      &:before
+        content "In Progress"
+
+    &--complete
+      color #69B783
+      background-color #C0E2CE
+      padding 0 15px
+
+      &:before
+        content "Complete"
+
+  &__estimate
+    margin-left 20px
+    background-color #E2DEDB
+    line-height 30px
+    width 30px
+    border-radius 20px
+    text-align center
+    flex none
+
+  &:nth-child(odd):not(.ticket--selected)
+    background-color #ffffff
+
+  &--selected
+    color #D79D77
+    background-color #FAF3EF

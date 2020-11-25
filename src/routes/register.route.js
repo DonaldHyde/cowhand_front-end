@@ -7,13 +7,12 @@ import { API_URL } from '../env/env'
 import '../static/css/login.css'
 import logo_100 from '../static/images/cowhand_logo_100.png'
 
-// const history = useHistory()
-
-class Login extends React.Component {
+class Register extends React.Component {
   constructor() {
     super()
 
     this.state = {
+      username: '',
       email: '',
       password: '',
     }
@@ -29,18 +28,17 @@ class Login extends React.Component {
   }
 
   submitLogin(e) {
+    console.log('register')
+    debugger
     axios
-      .post(`${API_URL}/api/v1/login`, {
+      .post(`${API_URL}/api/v1/register`, {
+        username: this.state.username,
         email: this.state.email,
         password: this.state.password,
       })
       .then((res) => {
-        console.log('Login Success!')
+        console.log('response', res)
         this.props.setToken(res.data.token)
-        // axios.defaults.headers.common[
-        //   'Authorization'
-        // ] = `Bearer ${res.data.token}`
-        console.log('Redirecting to dashboard!')
         this.props.history.push('/dashboard')
       })
       .catch((err) => {
@@ -52,11 +50,10 @@ class Login extends React.Component {
   }
 
   componentDidMount() {
-    // console.log(this.props.getTokenHeader())
-    // axios.get(`${API_URL}/api/v1/login/status`).then((res) => {
-    //   console.log(res)
-    //   if (res.data.sessionActive) return this.props.history.push('/dashboard')
-    // })
+    axios.get(`${API_URL}/api/v1/login/status`).then((res) => {
+      console.log(res.data.sessionActive)
+      if (res.data.sessionActive) return this.props.history.push('/dashboard')
+    })
   }
 
   render() {
@@ -64,10 +61,13 @@ class Login extends React.Component {
       <div className="login-view">
         <div className="title-container">
           <img src={logo_100}></img>
-          <h1>Get Back in the Saddle</h1>
-          <p>(Login)</p>
+          <h1>Register</h1>
         </div>
         <div className="form-container">
+          <div className="input-element">
+            <label htmlFor="username">Name</label>
+            <input type="username" name="username" onChange={this.onChange} />
+          </div>
           <div className="input-element">
             <label htmlFor="email">Email</label>
             <input type="email" name="email" onChange={this.onChange} />
@@ -83,4 +83,4 @@ class Login extends React.Component {
   }
 }
 
-export default withRouter(Login)
+export default withRouter(Register)

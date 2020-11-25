@@ -1,0 +1,52 @@
+.projects__select {
+  position: relative;
+  color: #faf8f7;
+}
+.projects__button {
+  font-size: 18px;
+  background: none;
+  border: none;
+  color: #faf8f7;
+  font-weight: 300;
+  padding: 6px 13px;
+}
+.projects__button:hover {
+  background-color: #656172;
+  border-radius: 10px;
+}
+.projects__button:after {
+  content: '';
+  width: 0px;
+  height: 0px;
+  border-top: 8px solid #faf8f7;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  position: relative;
+  top: 15px;
+  left: 10px;
+  margin-right: 10px;
+}
+.projects__nav {
+  position: absolute;
+  z-index: 1;
+  background: #231e35;
+  padding: 0 25px;
+  top: 41px;
+  left: -25px;
+  min-width: 260px;
+}
+.projects__nav--hidden {
+  display: none;
+}
+.projects__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.projects__item {
+  margin: 10px 0;
+}
+.projects__link {
+  color: #faf8f7;
+  text-decoration: none;
+}

@@ -1,0 +1,103 @@
+.sidebar
+  width 260px
+  background-color #FAF8F7
+  position absolute
+  left 0
+  top 60px
+  bottom 0
+  cursor default
+  color #C4C4C4
+
+  &__header
+    margin 30px 20px
+    display flex
+    // padding 5px 0
+    // line-height 48px
+    font-size 18px
+    // font-family 'Holtwood One SC'
+    align-items center
+
+  &__logo
+    // display inline-block
+    height 40px
+    width 40px
+    // margin 5px 0px 5px 5px
+    border-radius: 20px;
+    background-color: #c4c4c4;
+
+  &__title-container
+    display flex
+    flex-direction column
+    justify-content space-evenly
+    margin-left 20px
+    color #656172
+
+  &__title
+    font-size 18px
+    // display inline-block
+    // margin-left 20px
+    font-weight 700
+
+  &__subtitle
+    font-size 12px
+    // display inline-block
+
+  &__body
+    margin 25px
+    margin-right 0
+
+  &__list
+    list-style none
+    margin 0
+    padding 0
+    font-size 18px
+
+  &__link
+    text-decoration none
+    color #c4c4c4
+    font-weight 500
+    display flex
+    align-items center
+    border-radius 10px 0px 0px 10px
+    margin 10px 0
+
+    &--selected
+      background-color #E2DEDB
+      color #656172
+
+  &__icon
+    margin 10px
+    color inherit
+
+  &__project
+    position relative
+    margin-top 40px
+    height 30px
+    line-height 30px
+    cursor pointer
+
+    &--selected
+      color #6CD1E5
+
+      .sidebar__wrapper
+        fill #6CD1E5
+
+      &:after
+        content ''
+        position absolute
+        right 0
+        width 0px
+        height 0px
+        border-top 15px solid transparent
+        border-bottom 15px solid transparent
+        border-right 15px solid #E2DEDB
+
+  &__wrapper
+    display inline-block
+
+  &__name
+    display inline
+    margin-left 20px
+    vertical-align top
+
+      

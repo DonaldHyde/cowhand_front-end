@@ -1,0 +1,143 @@
+.editor
+  position absolute
+  // right -450px
+  right 0
+  width 450px
+  top 60px
+  bottom 0
+  color #A19E9C
+  font-size 14px
+  background-color #FAF8F7
+  border-left 1px solid #A19E9C
+  transition-property right
+  transition-duration 500ms
+  transition-timing-function ease-in-out
+
+  &__header
+    position relative
+    padding 5px 0
+    border-bottom 1px solid #A19E9C
+    line-height 48px
+    color #A19E9C
+
+  &__title
+    font-size 18px
+    margin-left 30px
+    font-weight 700
+
+  &__number
+    margin-right 20px
+
+  &__close
+    position absolute
+    right 0
+    top 0
+    bottom 0
+    width 20px
+    margin-right 20px
+
+    &:before
+      position absolute
+      content ''
+      width 18px
+      height 0px
+      border 1px solid #A19E9C
+      top 50%
+      transform rotate(45deg)
+
+    &:after
+      position absolute
+      content ''
+      width 18px
+      height 0px
+      border 1px solid #A19E9C
+      top 50%
+      transform rotate(-45deg)
+
+  &__body
+    padding 15px
+
+  &__label
+    font-weight 700
+    font-size 18px
+
+  &__select
+    margin-left 20px
+    line-height 30px
+    border-radius 20px
+    text-align center
+    border 0
+    color #a19e9c
+    background-color #E2DEDB
+    height 30px
+    padding 0 15px
+
+    &--todo
+      color #E25141
+      background-color #F4CDC8
+
+    &--in-progress
+      color #C1AA57
+      background-color #E8DEBE
+
+  &__status
+    display inline-block
+    margin-left 20px
+    line-height 30px
+    border-radius 20px
+    text-align center
+    padding 0 15px
+    line-height 30px
+
+    &--todo
+      color #E25141
+      background-color #F4CDC8
+
+      &:before
+        content "To Do"
+
+    &--in-progress
+      color #C1AA57
+      background-color #E8DEBE
+
+      &:before
+        content "In Progress"
+
+    &--complete
+      color #69B783
+      background-color #C0E2CE
+
+      &:before
+        content "Complete"
+
+  &__name
+    display inline-block
+    margin-left 20px
+    line-height 30px
+    border-radius 20px
+    text-align center
+    padding 0 15px
+    color #a19e9c
+    background-color #e2dedb
+    line-height 30px
+
+  &__group
+    padding 10px 0
+
+  &__description
+    margin-top 5px
+
+  &__attachments
+    margin-top 5px
+
+  &__comments
+    margin-top 5px
+
+  &__button
+    font-size 14px
+    background-color #E2DEDB
+    color #A19E9C
+    line-height 24px
+    border none
+    border-radius 15px
+    padding 0 10px

@@ -1,0 +1,72 @@
+.navbar {
+  background-color: #231e35;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  height: 60px;
+  cursor: default;
+  display: flex;
+}
+.navbar__header {
+  width: 260px;
+  margin: 6px 0;
+  padding: 0 15px;
+  border-right: 1px solid #656172;
+  line-height: 48px;
+  font-size: 18px;
+  font-family: 'Holtwood One SC';
+}
+.navbar__logo {
+  display: inline-block;
+  height: 38px;
+  width: 38px;
+  margin: 5px 0px 5px 5px;
+}
+.navbar__title {
+  font-size: 18px;
+  display: inline-block;
+  margin-left: 20px;
+  font-family: 'Holtwood One SC';
+  color: #faf8f7;
+}
+.navbar__body {
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  display: flex;
+}
+.navbar__item {
+  margin: 0 13px;
+  color: #faf8f7;
+  line-height: 36px;
+}
+.navbar__link {
+  color: #faf8f7;
+  text-decoration: none;
+  padding: 6px 13px;
+}
+.navbar__link:hover {
+  background-color: #656172;
+  border-radius: 10px;
+}
+.navbar__button {
+  background-color: #6cd1e5;
+  color: #faf8f7;
+  border: none;
+  border-radius: 10px;
+  padding: 6px 33px;
+  font-size: 18px;
+}
+.navbar__user {
+  margin: 0 25px;
+  color: #faf8f7;
+  font-size: 18px;
+}

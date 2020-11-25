@@ -1,0 +1,29 @@
+.main {
+  position: absolute;
+  left: 260px;
+  top: 60px;
+  bottom: 0;
+  right: 0;
+  background-color: #e2dedb;
+}
+.main--has-ticket {
+  right: 450px;
+}
+.main__header {
+  padding: 5px 0;
+  border-bottom: 1px solid #a19e9c;
+  line-height: 48px;
+  color: #a19e9c;
+}
+.main__title {
+  font-size: 18px;
+  margin-left: 30px;
+  font-weight: 700;
+}
+.main__title:empty:before {
+  content: ' ';
+  white-space: pre-wrap;
+}
+.main__body {
+  padding: 15px;
+}

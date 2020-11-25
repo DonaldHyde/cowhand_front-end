@@ -1,0 +1,28 @@
+.main
+  position absolute
+  left 260px
+  top 60px
+  bottom 0
+  right 0
+  background-color #E2DEDB
+
+  &--has-ticket
+    right 450px
+
+  &__header
+    padding 5px 0
+    border-bottom 1px solid #A19E9C
+    line-height 48px
+    color #A19E9C
+
+  &__title
+    font-size 18px
+    margin-left 30px
+    font-weight 700
+
+    &:empty:before
+      content ' '
+      white-space pre-wrap
+
+  &__body
+    padding 15px

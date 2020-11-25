@@ -1,0 +1,143 @@
+.editor {
+  position: absolute;
+  right: 0;
+  width: 450px;
+  top: 60px;
+  bottom: 0;
+  color: #a19e9c;
+  font-size: 14px;
+  background-color: #faf8f7;
+  border-left: 1px solid #a19e9c;
+  transition-property: right;
+  transition-duration: 500ms;
+  transition-timing-function: ease-in-out;
+}
+.editor__header {
+  position: relative;
+  padding: 5px 0;
+  border-bottom: 1px solid #a19e9c;
+  line-height: 48px;
+  color: #a19e9c;
+}
+.editor__title {
+  font-size: 18px;
+  margin-left: 30px;
+  font-weight: 700;
+}
+.editor__number {
+  margin-right: 20px;
+}
+.editor__close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 20px;
+  margin-right: 20px;
+}
+.editor__close:before {
+  position: absolute;
+  content: '';
+  width: 18px;
+  height: 0px;
+  border: 1px solid #a19e9c;
+  top: 50%;
+  transform: rotate(45deg);
+}
+.editor__close:after {
+  position: absolute;
+  content: '';
+  width: 18px;
+  height: 0px;
+  border: 1px solid #a19e9c;
+  top: 50%;
+  transform: rotate(-45deg);
+}
+.editor__body {
+  padding: 15px;
+}
+.editor__label {
+  font-weight: 700;
+  font-size: 18px;
+}
+.editor__select {
+  margin-left: 20px;
+  line-height: 30px;
+  border-radius: 20px;
+  text-align: center;
+  border: 0;
+  color: #a19e9c;
+  background-color: #e2dedb;
+  height: 30px;
+  padding: 0 15px;
+}
+.editor__select--todo {
+  color: #e25141;
+  background-color: #f4cdc8;
+}
+.editor__select--in-progress {
+  color: #c1aa57;
+  background-color: #e8debe;
+}
+.editor__status {
+  display: inline-block;
+  margin-left: 20px;
+  line-height: 30px;
+  border-radius: 20px;
+  text-align: center;
+  padding: 0 15px;
+  line-height: 30px;
+}
+.editor__status--todo {
+  color: #e25141;
+  background-color: #f4cdc8;
+}
+.editor__status--todo:before {
+  content: "To Do";
+}
+.editor__status--in-progress {
+  color: #c1aa57;
+  background-color: #e8debe;
+}
+.editor__status--in-progress:before {
+  content: "In Progress";
+}
+.editor__status--complete {
+  color: #69b783;
+  background-color: #c0e2ce;
+}
+.editor__status--complete:before {
+  content: "Complete";
+}
+.editor__name {
+  display: inline-block;
+  margin-left: 20px;
+  line-height: 30px;
+  border-radius: 20px;
+  text-align: center;
+  padding: 0 15px;
+  color: #a19e9c;
+  background-color: #e2dedb;
+  line-height: 30px;
+}
+.editor__group {
+  padding: 10px 0;
+}
+.editor__description {
+  margin-top: 5px;
+}
+.editor__attachments {
+  margin-top: 5px;
+}
+.editor__comments {
+  margin-top: 5px;
+}
+.editor__button {
+  font-size: 14px;
+  background-color: #e2dedb;
+  color: #a19e9c;
+  line-height: 24px;
+  border: none;
+  border-radius: 15px;
+  padding: 0 10px;
+}
